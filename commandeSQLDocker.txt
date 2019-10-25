@@ -11,4 +11,5 @@ docker run --name myadmin -d --link container-mysql:db -p 8080:80 phpmyadmin/php
 docker run -p 3306:3306 --name mysql-standalone -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=test -e MYSQL_USER=sa -e MYSQL_PASSWORD=password -d mysql:5.6
 docker container rm nomContainer -> supprimer un conteneur 
 docker rm containerid -f -> supprimer le conteneur running
+docker container start nameContainer
  
