@@ -1,6 +1,7 @@
 docker pull mysql
 docker images
 docker ps
+docker ps a -> afficher le status du conteneur
 docker run --name container-mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:5.7
 docker exec -it container-mysql  mysql -uroot -p -> se connecter a sql 
 sql>show databases;
